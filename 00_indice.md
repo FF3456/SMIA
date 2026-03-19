@@ -1,6 +1,6 @@
 # **Hoja de Trabajo – Práctica**
 
-## Índice
+## **Índice**
 
 1. Ficha del Proyecto  
 2. Matriz de Stakeholders  
