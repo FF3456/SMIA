@@ -1,12 +1,11 @@
-# Índice
+# Hoja de Trabajo – Práctica
 
-1. Introducción y Contexto  
-2. Definición del Problema  
-3. Objetivo del Proyecto  
-4. Stakeholders  
-5. Requerimientos Funcionales  
-6. Requerimientos No Funcionales  
-7. Requerimientos No Funcionales DevOps  
-8. Reglas de Negocio  
-9. Validación y Cierre  
-10. Transcripción de Entrevista
+## Índice
+
+1. Ficha del Proyecto  
+2. Matriz de Stakeholders  
+3. Listado de Requerimientos Funcionales (RF)  
+4. Listado de Requerimientos No Funcionales (RNF) 
+5. Historias de Usuario
+6. Reglas de negocio y restricciones
+7. Validacion y cierre
