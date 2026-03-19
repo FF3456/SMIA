@@ -38,7 +38,7 @@ En esta sección se identifican los actores clave que intervienen en el Sistema 
 ---
 
 ## 2. Registro Detallado de Interesados
-S
+
 | Nombre / Grupo | Rol en el Proyecto | Expectativa Principal | Impacto |
 | :--- | :--- | :--- | :--- |
 | **Secretaría de Gestión Ambiental (SMGA)** | Cliente / Dueño del Producto | Centralizar datos de aire, agua y residuos para toma de decisiones. | Crítico |
