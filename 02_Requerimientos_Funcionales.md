@@ -1,45 +1,45 @@
-# Requerimientos Funcionales 
+# Requerimientos Funcionales
 
-| ID | Descripción | Prioridad | Criterio de Aceptación |
-|----|------------|----------|------------------------|
-| RF-01 | Autenticación de usuarios mediante OAuth2/JWT | Must | Token válido y expiración configurable |
-| RF-02 | Gestión de usuarios (crear, editar, eliminar) | Must | CRUD funcional |
-| RF-03 | Definición de roles (Admin, Técnico, Ciudadano) | Must | Acceso restringido por rol |
-| RF-04 | Bloqueo tras 3 intentos fallidos | Must | Usuario bloqueado automáticamente |
-| RF-05 | Acceso público sin login | Should | Acceso libre + registro opcional |
-| RF-06 | Validación y persistencia de datos | Must | Validación 100% + guardado < 500ms |
-| RF-07 | Monitoreo de calidad del aire | Must | Cálculo automático según norma |
-| RF-08 | Monitoreo de calidad de agua | Must | Clasificación automática |
-| RF-09 | Gestión de residuos | Must | Validación normativa + geolocalización |
-| RF-10 | Monitoreo del parque automotor | Must | Datos vinculados a placa |
-| RF-11 | Monitoreo acústico | Must | Mapas de calor < 3s |
-| RF-12 | Control industrial | Must | Requiere firma digital y evidencia |
-| RF-13 | Seguimiento de proyectos ambientales | Must | Alertas automáticas |
-| RF-14 | Visor GIS interactivo | Must | Capas activables sin errores |
-| RF-15 | Visualización de calidad del aire | Must | Actualización automática |
-| RF-16 | Visualización de rutas y zonas | Must | Datos correctos en mapa |
-| RF-17 | Visualización de ruido | Must | Mapas de calor funcionales |
-| RF-18 | Generación de reportes PDF/Excel | Must | Descarga < 10s con firma digital |
-| RF-19 | Portal público de indicadores | Should | Datos actualizados < 24h |
-| RF-20 | Sincronización con sensores | Must | Respuesta < 1s |
-| RF-21 | Extracción automática de datos | Must | Datos reflejados < 5 min |
-| RF-22 | Envío de alertas | Should | Logs automáticos |
-| RF-23 | Integración con SIGIR | Must | Estados consistentes |
-| RF-24 | Importación de rutas GPS | Must | Visualización en tiempo real |
-| RF-25 | Reporte de incidencias | Must | Ticket automático generado |
-| RF-26 | Validación de formatos JSON/XML | Must | 100% validación |
-| RF-27 | Actualización de normativa | Should | Cambios automáticos |
-| RF-28 | Envío de reporte al sistema nacional | Must | Confirmación HTTP 200 |
-| RF-29 | Sincronización de denuncias | Must | Categorías iguales |
-| RF-30 | Recepción de denuncias | Must | Ticket generado < 2 min |
-| RF-31 | Actualización de estado de denuncias | Must | Seguimiento visible |
-| RF-32 | Validación geográfica (WGS84) | Must | Error < 0.5 m |
-| RF-33 | Importación de predios | Must | Información visible al hacer clic |
-| RF-34 | Notificación de zonas restringidas | Should | Estado actualizado |
-| RF-35 | Notificaciones por umbrales | Could | Alertas por correo/SMS |
-| RF-36 | Validación normativa de residuos | Must | Datos validados + firma digital |
-| RF-37 | Informe anual de KPIs | Must | Resumen de 7 áreas |
-| RF-38 | Registro con firma digital | Must | Datos inmutables |
-| RF-39 | Gestión de inspecciones vehiculares | Must | Integración con emisiones |
-| RF-40 | Restricción por unidad técnica | Must | Acceso limitado |
-| RF-41 | Log de auditoría | Must | Registro completo de cambios |
+| ID | Descripción del Requerimiento | Prioridad | Criterio de Aceptación |
+|----|-----------------------------|----------|------------------------|
+| RF-01 | El sistema debe permitir la autenticación de usuarios mediante protocolos seguros (OAuth2/JWT). | Must | Token válido generado. Expiración de sesión configurable. |
+| RF-02 | El sistema debe permitir la creación, edición y eliminación de usuarios. | Must | CRUD completo funcional. |
+| RF-03 | El sistema debe definir y aplicar roles (Administrador, Técnico, Ciudadano) con permisos diferenciados. | Must | Cada rol accede solo a lo autorizado. |
+| RF-04 | El sistema debe bloquear el acceso tras 3 intentos fallidos de autenticación. | Must | Usuario bloqueado automáticamente. |
+| RF-05 | El sistema debe permitir a los ciudadanos acceder a datos públicos sin autenticación y registrarse opcionalmente para seguimiento de servicios o denuncias. | Should | Acceso sin login funcional. Registro opcional para seguimiento o reporte. |
+| RF-06 | Gestión Integrada de Módulos Ambientales. | Must | 1. Validación de tipos de datos al 100%. 2. Persistencia en base de datos PostgreSQL en < 500ms. 3. Generación automática de folios o IDs únicos por registro. |
+| RF-07 | Gestión integrada: Aire (Red MONICA): Registro y monitoreo de concentraciones de gases (NO2, SO2, O3) y material particulado (PM10, PM2.5). | Must | Cálculo automático de promedios horarios y diarios según la Norma NB 62011. |
+| RF-08 | Gestión Integrada: Monitoreo de Calidad de Cuerpos de Agua. Registro de parámetros físico-químicos y bacteriológicos en ríos y cuencas del municipio. | Must | Clasificación automática del tipo de agua y aptitud de uso según la Ley 1333. |
+| RF-09 | Gestión Integrada: Gestión Integral de Residuos (GIR). Control de manifiestos, pesaje en estaciones y seguimiento a operadores autorizados. | Must | Validación obligatoria de códigos de la Ley 755 y georreferenciación del origen. |
+| RF-10 | Gestión Integrada: Monitoreo del Parque Automotor (CRTV). Registro de inspecciones de emisiones (gases y opacidad) en fuentes móviles. | Must | Captura de datos de CO e HC vinculada automáticamente al número de Placa del vehículo. |
+| RF-11 | Gestión Integrada: Monitoreo Acústico. Captura de niveles de presión sonora (decibelios) y gestión de puntos de monitoreo fijos/móviles. | Must | Generación de visualizaciones de isófonas (mapas de calor) en el visor GIS en < 3 segundos. |
+| RF-12 | Gestión Integrada: Control a Unidades Industriales. Gestión de formularios de control de efluentes, emisiones y seguimiento al registro RAI. | Must | Bloqueo de registro si no se adjunta Firma Digital (ADSIB) y evidencia fotográfica del lugar. |
+| RF-13 | Gestión Integrada: Monitoreo a las Actividades, Obras y Proyectos (AOP). Seguimiento a licencias ambientales, manifiestos y planes de adecuación (PASA). | Must | Sistema de alertas automáticas ante vencimiento de plazos de cumplimiento ambiental y medidas de mitigación. |
+| RF-14 | Visor GIS interactivo: Implementación de un visor geográfico que permita la visualización y gestión de capas ambientales base. | Must | El sistema permite activar y desactivar capas de forma independiente y realizar navegación (zoom/pan) sin errores de renderizado. |
+| RF-15 | Capa de Calidad del Aire (Red MONICA): Visualización de puntos de monitoreo atmosférico en el mapa. | Must | Los puntos muestran la simbología de semáforo (ICA) actualizada automáticamente cada hora según los rangos de la norma NB 62011. |
+| RF-16 | Capas de Residuos e Industrias: Visualización de rutas de recolección de basura y ubicación del catastro industrial. | Must | Se visualizan correctamente las líneas de ruta y los polígonos de zonas industriales vinculados a la base de datos municipal. |
+| RF-17 | Capa de Zonas Acústicas: Representación de mapas de calor de presión sonora (ruido) sobre el mapa base. | Must | El mapa de calor se despliega correctamente sobre el catastro municipal permitiendo identificar zonas de alta contaminación acústica. |
+| RF-18 | Gestión Automatizada de Reportes Técnicos y Legales: El sistema debe generar informes exportables (PDF/Excel) integrando los datos de los 7 módulos de gestión. | Must | La descarga debe ser en < 10s, debe contar con el Logo municipal, fecha/hora y foliado automático con Firma Digital (ADSIB) e integridad vía QR, en formato PDF/A inmutable. |
+| RF-19 | El sistema debe publicar un portal público con indicadores ambientales actualizados. | Should | Los ciudadanos acceden sin login; los datos tienen máximo 24h de desfase. |
+| RF-20 | Sincronización Bidireccional: El sistema debe mantener un canal abierto para validar estados de conexión con los sensores de la Red MONICA. | Must | API de enlace activa; respuesta de "Heartbeat" exitosa en < 1s. |
+| RF-21 | Extracción de Datos (Pull): Captura horaria de parámetros PM10, NO2 y decibeles (dB) desde las estaciones de monitoreo. | Must | Datos reflejados en el visor GIS y base de datos local en menos de 5 minutos tras la captura. |
+| RF-22 | Envío de Alertas (Push): Notificación automática a la Red MONICA cuando se detecten fallos de consistencia en los datos recibidos. | Should | Registro de log de errores enviado al administrador de la Red MONICA automáticamente. |
+| RF-23 | Sincronización Bidireccional (SIGIR): Intercambio de estados de manifiestos de transporte de residuos peligrosos y especiales. | Must | Consistencia de estados (Pendiente/Aprobado) idéntica en ambos sistemas. |
+| RF-24 | Extracción de Rutas (Pull): Importación de coordenadas GPS y horarios de las rutas de recolección de basura del GAMLP. | Must | Visualización de rutas en tiempo real sobre el mapa del SMIA sin retrasos. |
+| RF-25 | Envío de Infracciones (Push): Reporte de incidentes de recolección detectados por inspectores del SMIA hacia el SIGIR. | Must | Creación de ticket de incidencia en SIGIR con ID único generado por el SMIA. |
+| RF-26 | Validación de Esquemas: Sincronización de formatos JSON/XML para asegurar compatibilidad con el estándar nacional. | Must | Validación exitosa del 100% de los campos obligatorios exigidos por el Ministerio. |
+| RF-27 | Captura de Normativa (Pull): Actualización de límites permisibles y parámetros legales desde el servidor central del SNIA. | Should | El sistema actualiza los umbrales de alerta automáticamente si el Ministerio cambia la norma. |
+| RF-28 | Reporte Ambiental (Push): Envío automático del "Informe del Estado del Ambiente" consolidado al servidor nacional. | Must | Confirmación de recepción (HTTP 200 OK) y sello digital de recibido por parte del SNIA. |
+| RF-29 | Enlace de Comunicación: Sincronización de catálogos de tipos de denuncia entre el SMIA y la central telefónica 155. | Must | Las categorías (Quema, Ruido, Escombros) deben ser idénticas en ambas plataformas. |
+| RF-30 | Recepción de Denuncias (Pull): Importación automática de quejas registradas por operadores telefónicos o portal web. | Must | Generación de ticket de inspección en la bandeja del técnico ambiental en < 2 min. |
+| RF-31 | Actualización de Estado (Push): Envío del progreso de la denuncia ("En inspección", "Resuelto") hacia la plataforma 155. | Must | El ciudadano puede ver el avance de su denuncia usando su código original de la Línea 155. |
+| RF-32 | Validación de Capas: Sincronización de proyecciones geográficas (WGS84) para evitar desplazamientos en el mapa. | Must | Error de precisión < 0.5 metros al superponer predios con datos del SMIA. |
+| RF-33 | Importación de Predios (Pull): Consumo de polígonos de industrias y zonificación urbana desde el servidor i-Gob. | Must | El visor muestra el nombre y registro legal del dueño del predio al hacer clic en el mapa. |
+| RF-34 | Sincronización de Eventos (Push): Notificación de zonas con clausura ambiental para su marcado en el catastro municipal. | Should | Actualización del estado "Restringido por Sanción Ambiental" en el visor de catastro. |
+| RF-35 | El sistema debe permitir notificaciones automáticas ante superación de umbrales ambientales. | Could | Se envía alerta por correo/SMS al técnico responsable en menos de 5 minutos. |
+| RF-36 | Estandarización Normativa (Ley 755): Validación de datos de residuos (Peso, Tipo, Placa y Operador). | Must | 1. Validación de campos y bloqueo fuera de geocerca. 2. Conversión a Kg y generación de hash. 3. Firma digital obligatoria. |
+| RF-37 | El sistema debe generar un informe anual que integre los indicadores clave (KPIs) de las 7 áreas. | Must | El reporte muestra resumen por área comparado con límites legales. |
+| RF-38 | El sistema debe permitir registrar formularios con firma digital. | Must | El registro no se guarda sin firma válida; datos inmutables. |
+| RF-39 | El sistema debe gestionar las inspecciones del Centro de Revisión Técnica Vehicular (CRTV). | Must | Interoperabilidad con analizadores de gases y validación tributaria. |
+| RF-40 | Restringir el acceso a formularios y edición según la unidad técnica. | Must | Un técnico solo edita su área; Admin acceso total. |
+| RF-41 | Log de Auditoría Inmutable. | Must | Registro de usuario, fecha, hora y cambios en tabla de solo lectura. |
