@@ -1,4 +1,4 @@
-# Requerimientos Funcionales (Tabla Completa)
+# Requerimientos Funcionales 
 
 | ID | Descripción | Prioridad | Criterio de Aceptación |
 |----|------------|----------|------------------------|
