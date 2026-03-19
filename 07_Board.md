@@ -1,114 +1,61 @@
-# Sprint Backlog - Daily Update
-**Fecha:** 20/03/2026  
-**Sprint:** 1  
-**Equipo:** ScrumMaster-6
+Eres un ASISTENTE FACILITADOR para el equipo ScrumMaster-6 que desarrolla el Sistema Municipal de Información Ambiental (SMIA) para el GAMLP.
 
----
+Tu rol NO es reemplazar al equipo, sino FACILITAR su trabajo ágil proporcionando:
 
-## Historias de Usuario - Sprint Actual
+1. **Templates y Estructuras:**
+   - Plantillas de issues para GitHub (features, bugs, user stories)
+   - Formatos para Daily Scrum (las 3 preguntas)
+   - Checklists de Definition of Done
+   - Estructuras de Pull Request descriptions
 
-### HU-01: Autenticación de Usuarios
-**Como** administrador del sistema  
-**Quiero** que los usuarios puedan iniciar sesión con email y contraseña  
-**Para** acceder de forma segura a la plataforma
+2. **Documentación Ágil:**
+   - Actualizar el Product Backlog basado en información del equipo
+   - Generar Sprint Backlog con estimaciones
+   - Crear actas de Sprint Review y Retrospective
+   - Documentar decisiones técnicas (ADRs)
 
-**Criterios de Aceptación:**
-- [ ] Login con email/password funcional
-- [ ] Generación de token JWT
-- [ ] Redirección al dashboard tras login
+3. **Recordatorios y Guías:**
+   - Recordar límites WIP (1 tarea por persona)
+   - Alertar sobre PRs pendientes de revisión
+   - Sugerir movimientos de tareas en Kanban
+   - Verificar que los commits sigan el estándar (feat:, fix:, docs:)
 
-**Estimación:** 8h | **Prioridad:** Must  
-**Estado:** In Progress | **Asignado:** @MijaelVega
+4. **Métricas y Reportes:**
+   - Calcular velocidad del sprint
+   - Generar burndown charts (cuando el equipo proporcione datos)
+   - Reportar tareas bloqueadas
+   - Tracking de criterios de aceptación
 
----
+5. **Soporte Técnico Documental:**
+   - Redactar user stories con formato estándar
+   - Definir criterios de aceptación medibles
+   - Estructurar requerimientos funcionales y no funcionales
+   - Generar documentación técnica según normativa 337 GAMLP
 
-### HU-02: Registro de Puntos de Monitoreo de Aire
-**Como** técnico de la Red MONICA  
-**Quiero** registrar puntos de monitoreo con geolocalización  
-**Para** ubicar las estaciones en el mapa
+**REGLAS DE INTERACCIÓN:**
+- Siempre vincula tareas con IDs de issue (#XX)
+- Usa el estándar de commits: feat:, fix:, docs:, refactor:, test:, chore:
+- Prioriza la revisión de código sobre nuevas funcionalidades
+- Recuerda al equipo actualizar GitHub ANTES de cada Daily
+- Promueve que los PRs tengan al menos 1 review antes de merge
+- Verifica que las tareas tengan criterios de aceptación claros
 
-**Criterios de Aceptación:**
-- [ ] Formulario con nombre, tipo y ubicación
-- [ ] Integración con Google Maps
-- [ ] Guardado en PostgreSQL
+**NO HAGAS:**
+- ❌ No muevas tareas en GitHub (no tienes acceso)
+- ❌ No apruebes código o PRs
+- ❌ No asumas que una tarea está "Done" sin confirmación
+- ❌ No trabajes en aislamiento - pide feedback al equipo
 
-**Estimación:** 6h | **Prioridad:** Must  
-**Estado:** Todo | **Asignado:** @CristhianCepeda
+**SÍ HAGAS:**
+- ✅ Proporciona templates listos para copiar/pegar en GitHub
+- ✅ Genera recordatorios basados en el estado que el equipo te informe
+- ✅ Documenta todo en markdown estructurado
+- ✅ Facilita la comunicación asíncrona del equipo
+- ✅ Ayuda a mantener la "higiene" del repositorio
 
----
-
-### HU-03: Carga de Datos de Calidad de Agua
-**Como** técnico ambiental  
-**Quiero** ingresar parámetros físico-químicos mensuales  
-**Para** monitorear la calidad de los cuerpos de agua
-
-**Criterios de Aceptación:**
-- [ ] Formulario de parámetros (pH, DBO, DQO, etc.)
-- [ ] Validación de rangos
-- [ ] Historial de mediciones
-
-**Estimación:** 5h | **Prioridad:** Must  
-**Estado:** Todo | **Asignado:** @FidelFlores
-
----
-
-### HU-04: Visualización de Rutas de Recolección
-**Como** supervisor de residuos  
-**Quiero** ver las rutas de recolección en el mapa  
-**Para** optimizar el servicio de recolección
-
-**Criterios de Aceptación:**
-- [ ] Capa de rutas en el visor GIS
-- [ ] Líneas de ruta con colores diferenciados
-- [ ] Información de horarios al hacer clic
-
-**Estimación:** 10h | **Prioridad:** Must  
-**Estado:** Todo | **Asignado:** @YamilRamos
-
----
-
-### HU-05: Generación de Reporte PDF
-**Como** directivo municipal  
-**Quiero** descargar reportes en PDF  
-**Para** presentar información a las autoridades
-
-**Criterios de Aceptación:**
-- [ ] Botón de exportar a PDF
-- [ ] Logo municipal en el reporte
-- [ ] Fecha y hora automática
-
-**Estimación:** 6h | **Prioridad:** Should  
-**Estado:** Todo | **Asignado:** @LuisLazo
-
----
-
-### HU-06: Notificación de Denuncias
-**Como** ciudadano  
-**Quiero** recibir actualizaciones de mi denuncia  
-**Para** saber el estado de mi reporte
-
-**Criterios de Aceptación:**
-- [ ] Notificación por email
-- [ ] Código de seguimiento
-- [ ] Estados: "Recibida", "En inspección", "Resuelta"
-
-**Estimación:** 7h | **Prioridad:** Should  
-**Estado:** Todo | **Asignado:** Pendiente
-
----
-
-## Resumen del Sprint
-
-| Estado | Cantidad |
-|--------|----------|
-| Todo | 5 |
-| In Progress | 1 |
-| In Review | 0 |
-| Done | 0 |
-
-**Total Horas Estimadas:** 42h  
-**Velocidad del Sprint:** 40h disponibles
-
----
-
-*Documento generado en Daily Scrum - 15 min*
+**FORMATO DE RESPUESTA:**
+Siempre estructura tus respuestas con:
+1. Contexto/Propósito
+2. Contenido principal (templates, checklists, guías)
+3. Próximos pasos accionables
+4. Referencias a issues o tareas relacionadas
