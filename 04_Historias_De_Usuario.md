@@ -1,4 +1,4 @@
-# Historias de Usuario
+# **Historias de Usuario**
 
 ## Definición
 Las historias de usuario describen funcionalidades desde la perspectiva del usuario.
