@@ -24,20 +24,35 @@ Actualmente la información ambiental se encuentra:
 ## Objetivo
 Centralizar, gestionar y visualizar la información ambiental en una plataforma única para mejorar la toma de decisiones y la transparencia.
 
-## Stakeholders
+# Registro y Matriz de Stakeholders - Proyecto SMIA
 
-### Internos
-- Técnicos ambientales
-- Inspectores
-- Planificadores
+En esta sección se identifican los actores clave que intervienen en el Sistema Municipal de Información Ambiental (SMIA), clasificados por su nivel de influencia y el impacto que el proyecto tiene sobre sus actividades.
 
-### Externos
-- Ciudadanos
-- Empresas
-- Instituciones académicas
+## 1. Matriz de Stakeholders (Poder vs. Interés)
 
-### Reguladores
-- Ministerio de Medio Ambiente
+| Nivel de Interés \ Poder | Bajo Poder | Alto Poder |
+| :--- | :--- | :--- |
+| **Alto Interés** | **Mantener Informados:** Ciudadanía, ONGs Ambientales, Investigadores UAB. | **Gestionar Atentamente (Key Players):** Alcalde, Secretaría de Gestión Ambiental (SMGA), Ministerio de Medio Ambiente (MMAyA). |
+| **Bajo Interés** | **Monitorear (Mínimo Esfuerzo):** Proveedores de hardware, Público general no residente. | **Mantener Satisfechos:** Dirección de Finanzas (GAMLP), Ente Regulador de Telecomunicaciones. |
 
-### Cliente
-- Gobierno Autónomo Municipal
+---
+
+## 2. Registro Detallado de Interesados
+S
+| Nombre / Grupo | Rol en el Proyecto | Expectativa Principal | Impacto |
+| :--- | :--- | :--- | :--- |
+| **Secretaría de Gestión Ambiental (SMGA)** | Cliente / Dueño del Producto | Centralizar datos de aire, agua y residuos para toma de decisiones. | Crítico |
+| **Dirección de Tecnologías (i-Gob)** | Socio Tecnológico | Asegurar la interoperabilidad con la plataforma i-Gob 24/7. | Alto |
+| **Red MONICA** | Proveedor de Datos | Automatizar la carga de datos de calidad del aire sin errores manuales. | Alto |
+| **Operadores de Residuos (SIGIR)** | Usuario Operativo | Validar manifiestos de transporte bajo la Ley 755 de forma digital. | Medio |
+| **Ministerio de Medio Ambiente (MMAyA)** | Ente Regulador | Recibir reportes consolidados (SNIA) con validez legal y firma digital. | Alto |
+| **Ciudadanía de La Paz** | Usuario Final / Beneficiario | Acceder a información transparente sobre el estado del ambiente (ICA). | Medio |
+| **Grupo ScrumMaster - 6** | Equipo de Desarrollo | Cumplir con los hitos de entrega del TDR y estándares WCAG 2.1. | Crítico |
+
+---
+
+## 3. Estrategia de Comunicación
+
+* **Stakeholders Críticos:** Reuniones semanales de seguimiento (Sprint Reviews).
+* **Stakeholders Operativos:** Manuales de usuario y capacitación técnica.
+* **Ciudadanía:** Portal público de datos abiertos y visualización GIS interactiva.
