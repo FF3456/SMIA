@@ -69,6 +69,10 @@ Como [rol], quiero [acción], para [beneficio].
 
 - HU-30: Como técnico, quiero recibir denuncias automáticamente, para atenderlas rápido.
 - HU-31: Como ciudadano, quiero ver el estado de mi denuncia, para hacer seguimiento.
+- HU-32: Como especialista GIS, quiero sincronizar proyecciones para evitar desplazamientos al superponer capas.
+- HU-33: Como fiscalizador, quiero importar polígonos desde i-Gob para ver el registro del dueño con un clic.
+- HU-34: Como administrador, quiero notificar clausuras al catastro para marcar zonas restringidas automáticamente.
+- HU-35: Como técnico, quiero alertas por correo/SMS al superar umbrales ambientales para actuar rápido.
 
 ---
 
