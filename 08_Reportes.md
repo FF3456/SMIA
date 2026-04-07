@@ -8,3 +8,4 @@
 | 04| Diario | 31/03/2026 | Reporte Diario | 10min | definicion de horas de trabajo y reportes diarios, definición de filosofía y arquitectura | Fidel Flores - Cristhian Cepeda - Luis Lazo - Yamil Ramos - Mijael Vega | 
 | 05| Diario | 01/04/2026 | Reporte Diario | 7min | Resumen de los manuales y vibe coding | Fidel Flores - Cristhian Cepeda - Luis Lazo - Yamil Ramos - Mijael Vega | 
 | 06| Diario | 02/04/2026 | Reporte Diario | 25min | Resumen, Asignacion de trabajo | Fidel Flores - Cristhian Cepeda - Luis Lazo - Yamil Ramos - Mijael Vega | 
+| 07| Diario | 06/04/2026 | Reporte Diario | 25min | Definicion de stack tecnologico y frameworks | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega | 
