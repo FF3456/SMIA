@@ -78,7 +78,7 @@
 ### HU-04: Bloqueo por Intentos Fallidos
 **Como** administrador de seguridad  
 **Quiero** que el sistema bloquee el acceso tras 3 intentos fallidos  
-**Para** prevenir ataques de fuerza bruta
+**Para:** prevenir ataques de fuerza bruta
 
 **Criterios de Aceptación:**
 - [ ] Contador de intentos fallidos
