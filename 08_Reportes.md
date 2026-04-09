@@ -11,3 +11,4 @@
 | 06| Diario | 05/04/2026 | Reporte Diario | 25min | Organización de las 41 historias de usuario | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega - Luis Lazo | 
 | 07| Diario | 06/04/2026 | Reporte Diario | 25min | Definicion de stack tecnologico y frameworks | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega | 
 | 08| Diario | 07/04/2026 | Reporte Diario | 60min | Estructuración del Backlog y Selección de Stack | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega | 
+| 09| Diario | 08/04/2026 | Reporte Diario | 60min | Deuda técnica deliberada en la seguridad y validaciones | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega - Luis Lazo | 
