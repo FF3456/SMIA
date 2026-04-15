@@ -1,0 +1,17 @@
+# Registro de Puntos a Tratar y Reportes de Sesión
+
+| Numero | Tipo | Fecha | Punto a Tratar |Tiempo de reunion| Reporte | Participantes | 
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 01 | Semanal | 20/03/2026 | Reporte General |7:30 min. | Asignacion de trabajo para cada integrante | - Vega Mijael / - Fidel Flores / - Yamil Ramos|
+| 02| Diario | 23/03/2026 | Reporte Diario | 2min | reporte de trabajo HU1 | Mijael Vega | 
+| 03| Diario | 25/03/2026 | Reporte Diario | 6min | definicion de trabajo y tiempo estimado | Mijael Vega | 
+| 04| Diario | 31/03/2026 | Reporte Diario | 10min | definicion de horas de trabajo y reportes diarios, definición de filosofía y arquitectura | Fidel Flores - Cristhian Cepeda - Luis Lazo - Yamil Ramos - Mijael Vega | 
+| 05| Diario | 01/04/2026 | Reporte Diario | 7min | Resumen de los manuales y vibe coding | Fidel Flores - Cristhian Cepeda - Luis Lazo - Yamil Ramos - Mijael Vega | 
+| 06| Diario | 02/04/2026 | Reporte Diario | 25min | Resumen, Asignacion de trabajo | Fidel Flores - Cristhian Cepeda - Luis Lazo - Yamil Ramos - Mijael Vega | 
+| 06| Diario | 05/04/2026 | Reporte Diario | 25min | Organización de las 41 historias de usuario | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega - Luis Lazo | 
+| 07| Diario | 06/04/2026 | Reporte Diario | 25min | Definicion de stack tecnologico y frameworks | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega | 
+| 08| Diario | 07/04/2026 | Reporte Diario | 60min | Estructuración del Backlog y Selección de Stack | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega | 
+| 09| Diario | 08/04/2026 | Reporte Diario | 60min | Deuda técnica deliberada en la seguridad y validaciones | Fidel Flores - Yamil Ramos - Mijael Vega - Luis Lazo | 
+| 10| Diario | 09/04/2026 | Reporte Diario | 25min | Auditoría de riesgos del proyecto real para evitar deuda técnica | Fidel Flores - Yamil Ramos - Luis Lazo | 
+| 11| Diario | 13/04/2026 | Reporte Diario | 45min | organización de la estructura del repositorio | Fidel Flores - Yamil Ramos - Luis Lazo - Cristhian Cepeda | 
+| 12| Diario | 14/04/2026 | Reporte Diario | 45min | estructura de carpetas unificada y estrategia de ramas basada en historias de usuario | Fidel Flores - Yamil Ramos - Luis Lazo | 
