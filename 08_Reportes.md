@@ -13,4 +13,4 @@
 | 08| Diario | 07/04/2026 | Reporte Diario | 60min | Estructuración del Backlog y Selección de Stack | Fidel Flores - Cristhian Cepeda - Yamil Ramos - Mijael Vega | 
 | 09| Diario | 08/04/2026 | Reporte Diario | 60min | Deuda técnica deliberada en la seguridad y validaciones | Fidel Flores - Yamil Ramos - Mijael Vega - Luis Lazo | 
 | 10| Diario | 09/04/2026 | Reporte Diario | 25min | Auditoría de riesgos del proyecto real para evitar deuda técnica | Fidel Flores - Yamil Ramos - Luis Lazo | 
-| 11| Diario | 13/04/2026 | Reporte Diario | 45min | organización de la estructura del repositorio | Fidel Flores - Yamil Ramos - Luis Lazo - Cristhian Cepeda | 
+| 11| Diario | 13/04/2026 | Reporte Diario | 45min | organización de la estructura del repositorio | Fidel Flores - Yamil Ramos - Luis Lazo - Cristhian Cepeda| 
