@@ -15,3 +15,4 @@
 | 10| Diario | 09/04/2026 | Reporte Diario | 25min | Auditoría de riesgos del proyecto real para evitar deuda técnica | Fidel Flores - Yamil Ramos - Luis Lazo | 
 | 11| Diario | 13/04/2026 | Reporte Diario | 45min | organización de la estructura del repositorio | Fidel Flores - Yamil Ramos - Luis Lazo - Cristhian Cepeda | 
 | 12| Diario | 14/04/2026 | Reporte Diario | 45min | Estructura de carpetas unificada y estrategia de ramas basada en historias de usuario | Fidel Flores - Yamil Ramos - Luis Lazo | 
+| 13| Diario | 14/04/2026 | Reporte Diario | 50min | Esquema que incluye carpetas para API, backend, base de datos, Docker, frontend, tests y documentos | Fidel Flores - Yamil Ramos - Luis Lazo | 
