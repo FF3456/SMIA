@@ -1,2 +1,2 @@
-"# SMIA" 
+# SMIA #
 Instalacion
