@@ -10,7 +10,7 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 | Módulo | Historias | Prioridad |
 |--------|-----------|-----------|
@@ -22,7 +22,7 @@
 
 ---
 
-## 🔐 Módulo 1: Seguridad y Autenticación (HU-01 a HU-05)
+## Módulo 1: Seguridad y Autenticación (HU-01 a HU-05)
 
 ### HU-01: Autenticación de Usuarios
 **Como** usuario del sistema  
@@ -109,7 +109,7 @@
 
 ---
 
-## 🌍 Módulo 2: Gestión Ambiental (HU-06 a HU-13)
+## Módulo 2: Gestión Ambiental (HU-06 a HU-13)
 
 ### HU-06: Validación de Tipos de Datos
 **Como** técnico ambiental  
@@ -247,7 +247,7 @@
 
 ---
 
-## 🗺️ Módulo 3: Visor GIS e Integración (HU-14 a HU-19)
+## Módulo 3: Visor GIS e Integración (HU-14 a HU-19)
 
 ### HU-14: Visor GIS Interactivo
 **Como** usuario del visor GIS  
@@ -351,7 +351,7 @@
 
 ---
 
-## 🔗 Módulo 4: Interoperabilidad - APIs (HU-20 a HU-34)
+## Módulo 4: Interoperabilidad - APIs (HU-20 a HU-34)
 
 ### HU-20: Sincronización Bidireccional Red MONICA
 **Como** administrador de sistemas  
@@ -608,7 +608,7 @@
 
 ---
 
-## 📢 Módulo 5: Ciudadanía y Normativa (HU-35 a HU-41)
+## Módulo 5: Ciudadanía y Normativa (HU-35 a HU-41)
 
 ### HU-35: Notificaciones por Superación de Umbrales
 **Como** técnico responsable  
@@ -729,7 +729,7 @@
 
 ---
 
-## 📊 Resumen del Product Backlog
+## Resumen del Product Backlog
 
 | Prioridad | Cantidad | Horas Estimadas |
 |-----------|----------|-----------------|
@@ -750,7 +750,7 @@
 
 ---
 
-## 🎯 Criterios de Terminación (DoD)
+## Criterios de Terminación (DoD)
 
 Para que una HU se considere **Done**:
 
@@ -763,7 +763,7 @@ Para que una HU se considere **Done**:
 
 ---
 
-## 📅 Planificación por Sprints (12 Sprints x 1 Semana)
+## Planificación por Sprints (12 Sprints x 1 Semana)
 
 | Sprint | Semanas | HU Incluidas | Hito TDR |
 |--------|---------|--------------|----------|
@@ -778,7 +778,3 @@ Para que una HU se considere **Done**:
 **Informe 3:** Día 90 (Sprint 12 + Cierre)
 
 ---
-
-*Documento generado para Product Backlog - Metodología RAD*  
-**Última Actualización:** 20/03/2026  
-**Versión:** 1.0

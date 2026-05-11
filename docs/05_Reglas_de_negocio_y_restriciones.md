@@ -1,4 +1,3 @@
-
 ### Reglas de Negocio y Restricciones 
 * **Disponibilidad de Datos:** Los datos ambientales crudos deben estar disponibles públicamente de forma obligatoria, salvo aquellos con clasificación expresa por seguridad nacional.
 * **Validez Administrativa:** Todos los reportes oficiales generados por el sistema deben incluir el **sello digital** de la municipalidad para garantizar su autenticidad y validez legal.
