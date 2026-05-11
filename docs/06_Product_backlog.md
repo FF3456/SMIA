@@ -1,24 +1,54 @@
-# Product Backlog - Sistema Municipal de Información Ambiental (SMIA)
 
-**Proyecto:** Plataforma SMIA - GAMLP  
-**Cliente:** Gobierno Autónomo Municipal de La Paz / Swisscontact  
-**Metodología:** RAD (Rapid Application Development)  
-**Plazo Total:** 90 días calendario  
-**Equipo:** ScrumMaster-6  
-**Fecha:** 20/03/2026  
-**Versión:** 1.0  
+# Product Backlog
+
+## Sistema Municipal de Información Ambiental (SMIA)
+
+El presente Product Backlog consolida los requerimientos funcionales priorizados para el desarrollo del Sistema Municipal de Información Ambiental (SMIA), plataforma orientada a centralizar, gestionar y visualizar información ambiental del Gobierno Autónomo Municipal de La Paz (GAMLP).
+
+El backlog fue estructurado considerando los lineamientos establecidos en los Términos de Referencia, integrando funcionalidades relacionadas con:
+
+* Gestión ambiental municipal.
+* Monitoreo ambiental en tiempo real.
+* Interoperabilidad institucional.
+* Integración GIS.
+* Transparencia ciudadana.
+* Automatización de reportes ambientales.
+* Gestión de denuncias e inspecciones.
+
+La priorización de historias se basa en el modelo:
+
+* **Must:** Funcionalidad crítica obligatoria.
+* **Should:** Funcionalidad importante pero no bloqueante.
+* **Could:** Funcionalidad complementaria o deseable.
 
 ---
 
-## Tabla de Contenidos
+# Estructura del Product Backlog
 
-| Módulo | Historias | Prioridad |
-|--------|-----------|-----------|
-| Seguridad & Auth | HU-01 a HU-05 | Must |
-| Módulos Ambientales | HU-06 a HU-13 | Must |
-| Visor GIS | HU-14 a HU-19 | Must/Should |
-| Interoperabilidad | HU-20 a HU-34 | Must/Should |
-| Ciudadanía & Normativa | HU-35 a HU-41 | Must/Could |
+Cada Historia de Usuario (HU) contiene:
+
+* Identificador único.
+* Descripción funcional.
+* Criterios de aceptación.
+* Prioridad.
+* Estimación de esfuerzo.
+* Responsable asignado.
+* Relación con requerimientos funcionales (RF).
+* Relación con requerimientos no funcionales (RNF).
+
+---
+
+# Resumen General del Backlog
+
+| Módulo                            | Historias     | Prioridad Predominante |
+| --------------------------------- | ------------- | ---------------------- |
+| Seguridad y Autenticación         | HU-01 a HU-05 | Must                   |
+| Gestión Ambiental                 | HU-06 a HU-13 | Must                   |
+| Visor GIS y Visualización         | HU-14 a HU-19 | Must / Should          |
+| Interoperabilidad e Integraciones | HU-20 a HU-34 | Must / Should          |
+| Ciudadanía, Normativa y Auditoría | HU-35 a HU-41 | Must / Could           |
+
+---
 
 ---
 
@@ -729,52 +759,47 @@
 
 ---
 
-## Resumen del Product Backlog
 
-| Prioridad | Cantidad | Horas Estimadas |
-|-----------|----------|-----------------|
-| **Must** | 37 | 380h |
-| **Should** | 3 | 26h |
-| **Could** | 1 | 8h |
-| **TOTAL** | **41** | **414h** |
+# Resumen Consolidado
 
-### Distribución por Módulo
-
-| Módulo | Historias | Horas | % del Total |
-|--------|-----------|-------|-------------|
-| Seguridad & Auth | 5 | 37h | 9% |
-| Gestión Ambiental | 8 | 82h | 20% |
-| Visor GIS | 6 | 72h | 17% |
-| Interoperabilidad | 15 | 152h | 37% |
-| Ciudadanía & Normativa | 7 | 71h | 17% |
+| Prioridad | Cantidad de HU | Horas Estimadas |
+| --------- | -------------- | --------------- |
+| Must      | 37             | 380 h           |
+| Should    | 3              | 26 h            |
+| Could     | 1              | 8 h             |
+| Total     | 41             | 414 h           |
 
 ---
 
-## Criterios de Terminación (DoD)
+# Definición de Terminado (Definition of Done)
 
-Para que una HU se considere **Done**:
+Una historia de usuario será considerada finalizada cuando:
 
-- [ ] Código versionado en Git (RNF-DEV-02)
-- [ ] Pruebas unitarias con cobertura ≥ 80% (RNF-DEV-03)
-- [ ] Validado por el Usuario/Stakeholder en Taller Semanal
-- [ ] Funcional en entorno de QA con datos reales o simulados
-- [ ] Documentación actualizada en Manual Técnico
-- [ ] Desplegado en entorno de Preview para validación
+* El código esté versionado en Git.
+* Existan pruebas funcionales y unitarias.
+* La funcionalidad haya sido validada por usuarios responsables.
+* El despliegue funcione en ambiente QA.
+* La documentación técnica esté actualizada.
+* El módulo esté integrado al sistema principal.
+
+---
+
+# Planificación General de Sprints
+
+| Sprint       | Periodo       | Historias     | Entregable          |
+| ------------ | ------------- | ------------- | ------------------- |
+| Sprint 1-2   | Semanas 1-2   | HU-01 a HU-05 | Seguridad y Acceso  |
+| Sprint 3-4   | Semanas 3-4   | HU-06 a HU-13 | Gestión Ambiental   |
+| Sprint 5-6   | Semanas 5-6   | HU-14 a HU-19 | GIS y Visualización |
+| Sprint 7-9   | Semanas 7-9   | HU-20 a HU-34 | Interoperabilidad   |
+| Sprint 10-12 | Semanas 10-12 | HU-35 a HU-41 | Auditoría y Cierre  |
 
 ---
 
-## Planificación por Sprints (12 Sprints x 1 Semana)
+# Hitos Relacionados al TDR
 
-| Sprint | Semanas | HU Incluidas | Hito TDR |
-|--------|---------|--------------|----------|
-| 1-2 | 1-2 | HU-01 a HU-05 | Setup & Auth |
-| 3-4 | 3-4 | HU-06 a HU-13 | Módulos Ambientales |
-| 5-6 | 5-6 | HU-14 a HU-19 | Visor GIS |
-| 7-9 | 7-9 | HU-20 a HU-34 | Interoperabilidad |
-| 10-12 | 10-12 | HU-35 a HU-41 | Cierre & Capacitación |
-
-**Informe 1:** Día 40 (Sprint 5)  
-**Informe 2:** Día 80 (Sprint 11)  
-**Informe 3:** Día 90 (Sprint 12 + Cierre)
-
----
+| Hito          | Fecha Aproximada | Resultado Esperado               |
+| ------------- | ---------------- | -------------------------------- |
+| Informe 1     | Día 40           | Arquitectura + Módulos Base      |
+| Informe 2     | Día 80           | Integraciones + GIS              |
+| Informe Final | Día 90           | Sistema funcional + Capacitación |
