@@ -50,8 +50,6 @@ Cada Historia de Usuario (HU) contiene:
 
 ---
 
----
-
 ## Módulo 1: Seguridad y Autenticación (HU-01 a HU-05)
 
 ### HU-01: Autenticación de Usuarios
