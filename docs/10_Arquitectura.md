@@ -1,10 +1,10 @@
-# INFORME: FILOSOFÍA, ARQUITECTURA Y PATRONES DE DISEÑO – SMIA (VERSIÓN DETALLADA)
+# INFORME: FILOSOFÍA, ARQUITECTURA Y PATRONES DE DISEÑO – SMIA
 
 ---
 
 # 1. INTRODUCCIÓN
 
-El presente informe describe las decisiones técnicas adoptadas para el desarrollo del **Sistema de Monitoreo de Información Ambiental (SMIA)**, considerando su aplicación práctica dentro del proyecto, la organización del trabajo en equipo y la metodología de desarrollo utilizada.
+El presente informe describe las decisiones técnicas adoptadas para el desarrollo del Sistema de Monitoreo de Información Ambiental (SMIA), considerando su aplicación práctica dentro del proyecto, la organización del trabajo en equipo y la metodología de desarrollo utilizada.
 
 El documento expone la filosofía de desarrollo seleccionada, la arquitectura implementada, los patrones arquitectónicos y los patrones de diseño aplicados para garantizar escalabilidad, mantenibilidad, desacoplamiento y facilidad de integración entre componentes del sistema.
 
