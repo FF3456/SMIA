@@ -1,0 +1,189 @@
+<!-- dashboard.component.html -->
+<!-- SMIA — Dashboard Red MONICA | Patrón MVVM: View -->
+
+<div class="smia-dashboard">
+
+  <!-- ===== CABECERA ===== -->
+  <header class="smia-header">
+    <div class="header-brand">
+      <span class="header-logo">🌿</span>
+      <div>
+        <h1>Red MONICA</h1>
+        <p>Sistema Municipal de Información Ambiental · GAMLP</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span class="norma-badge">Norma NB 62011</span>
+      <span *ngIf="ultimaActualizacion" class="ultima-act">
+        Actualizado: {{ ultimaActualizacion | date:'HH:mm:ss' }}
+      </span>
+    </div>
+  </header>
+
+  <!-- ===== ALERTA DE ERROR ===== -->
+  <div *ngIf="error" class="alerta alerta-error">
+    <strong>Error:</strong> {{ error }}
+  </div>
+
+  <!-- ===== TARJETAS DE PROMEDIOS HORARIOS ===== -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">Promedios Horarios Actuales</h2>
+
+    <div class="grid-gases">
+      <div
+        *ngFor="let gas of GASES; trackBy: trackByGas"
+        class="tarjeta-gas"
+        [class.cargando]="cargando && !promedios[gas]">
+
+        <div class="gas-encabezado">
+          <div class="gas-nombre">
+            <span class="gas-sigla" [style.color]="GAS_CONFIG[gas].color">{{ gas }}</span>
+            <span class="gas-nombre-largo">{{ GAS_CONFIG[gas].nombre }}</span>
+          </div>
+          <span
+            *ngIf="promedios[gas]"
+            class="badge-calidad"
+            [ngClass]="claseBadge(promedios[gas]?.estado)">
+            {{ iconoCalidad(promedios[gas]?.estado) }} {{ promedios[gas]?.estado }}
+          </span>
+        </div>
+
+        <!-- Valor principal -->
+        <div class="gas-valor" *ngIf="promedios[gas]; else sinDatos">
+          <span class="valor-numero">
+            {{ promedios[gas]?.promedio | number:'1.1-2' }}
+          </span>
+          <span class="valor-unidad">{{ GAS_CONFIG[gas].unidad }}</span>
+        </div>
+
+        <ng-template #sinDatos>
+          <div class="gas-valor sin-datos">
+            <span class="valor-numero">–</span>
+            <span class="valor-unidad">Sin datos</span>
+          </div>
+        </ng-template>
+
+        <!-- Metadatos del promedio -->
+        <div class="gas-meta" *ngIf="promedios[gas]">
+          <div class="meta-fila">
+            <span>N mediciones:</span>
+            <strong>{{ promedios[gas]?.n_mediciones }}</strong>
+          </div>
+          <div class="meta-fila">
+            <span>Mín / Máx:</span>
+            <strong>
+              {{ promedios[gas]?.min | number:'1.1-2' }} /
+              {{ promedios[gas]?.max | number:'1.1-2' }}
+            </strong>
+          </div>
+          <div class="meta-fila">
+            <span>Período:</span>
+            <strong>
+              {{ promedios[gas]?.hora_inicio | date:'HH:mm' }} –
+              {{ promedios[gas]?.hora_fin   | date:'HH:mm' }}
+            </strong>
+          </div>
+        </div>
+
+        <!-- Barra de nivel NB 62011 -->
+        <div class="barra-nivel" *ngIf="promedios[gas]" [attr.aria-label]="'Nivel de ' + gas">
+          <div
+            class="barra-relleno"
+            [style.width.%]="(promedios[gas]!.promedio / GAS_CONFIG[gas].umbrales.malo) * 100 | clamp:0:100"
+            [ngClass]="claseBadge(promedios[gas]?.estado)">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMULARIO DE REGISTRO ===== -->
+  <section class="seccion">
+    <h2 class="seccion-titulo">Registrar Nueva Medición</h2>
+
+    <!-- Mensajes de éxito/error del formulario -->
+    <div *ngIf="mensajeExito" class="alerta alerta-exito">{{ mensajeExito }}</div>
+
+    <div *ngIf="erroresFormulario.length > 0" class="alerta alerta-error">
+      <strong>Corrija los siguientes errores:</strong>
+      <ul>
+        <li *ngFor="let e of erroresFormulario">{{ e }}</li>
+      </ul>
+    </div>
+
+    <form [formGroup]="medicionForm" (ngSubmit)="registrarMedicion()" class="form-medicion" novalidate>
+
+      <div class="form-fila">
+        <!-- Gas tipo -->
+        <div class="campo" [class.invalido]="medicionForm.get('gas_tipo')?.invalid && medicionForm.get('gas_tipo')?.touched">
+          <label for="gas_tipo">Tipo de gas *</label>
+          <select id="gas_tipo" formControlName="gas_tipo">
+            <option value="">Seleccione...</option>
+            <option value="NO2">NO₂ – Dióxido de Nitrógeno</option>
+            <option value="SO2">SO₂ – Dióxido de Azufre</option>
+            <option value="O3">O₃ – Ozono</option>
+          </select>
+          <span class="campo-error" *ngIf="medicionForm.get('gas_tipo')?.errors?.['required'] && medicionForm.get('gas_tipo')?.touched">
+            Seleccione el tipo de gas.
+          </span>
+        </div>
+
+        <!-- Valor de concentración -->
+        <div class="campo" [class.invalido]="medicionForm.get('valor')?.invalid && medicionForm.get('valor')?.touched">
+          <label for="valor">Concentración (µg/m³) *</label>
+          <input
+            type="number"
+            id="valor"
+            formControlName="valor"
+            step="0.0001"
+            min="0"
+            placeholder="Ej: 45.6200" />
+          <span class="campo-error" *ngIf="medicionForm.get('valor')?.errors?.['required'] && medicionForm.get('valor')?.touched">
+            El valor es obligatorio.
+          </span>
+          <span class="campo-error" *ngIf="medicionForm.get('valor')?.errors?.['min']">
+            La concentración no puede ser negativa.
+          </span>
+        </div>
+      </div>
+
+      <div class="form-fila">
+        <!-- Timestamp -->
+        <div class="campo" [class.invalido]="medicionForm.get('timestamp')?.invalid && medicionForm.get('timestamp')?.touched">
+          <label for="timestamp">Fecha y hora de medición *</label>
+          <input
+            type="datetime-local"
+            id="timestamp"
+            formControlName="timestamp" />
+          <span class="campo-error" *ngIf="medicionForm.get('timestamp')?.errors?.['required'] && medicionForm.get('timestamp')?.touched">
+            La fecha y hora son obligatorias.
+          </span>
+        </div>
+
+        <!-- Observaciones -->
+        <div class="campo">
+          <label for="observaciones">Observaciones</label>
+          <input
+            type="text"
+            id="observaciones"
+            formControlName="observaciones"
+            maxlength="500"
+            placeholder="Opcional" />
+        </div>
+      </div>
+
+      <div class="form-acciones">
+        <button type="submit" class="btn-primary" [disabled]="cargando">
+          <span *ngIf="!cargando">Registrar Medición</span>
+          <span *ngIf="cargando">Enviando...</span>
+        </button>
+        <button type="button" class="btn-secondary" (click)="medicionForm.reset()">
+          Limpiar
+        </button>
+      </div>
+
+    </form>
+  </section>
+
+</div>
