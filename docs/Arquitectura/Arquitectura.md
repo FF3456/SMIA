@@ -340,9 +340,20 @@ La arquitectura propuesta se adapta adecuadamente al contexto del proyecto SMIA 
 ---
 ## Arquitectura de Despliegue del SMIA
 
-![DD-Despliegue](Diagramas/DIAGRAMA-DESPLIEGUE.png)
+![Diagrama de Despliegue](./Diagramas/DIAGRAMA-DESPLIEGUE.png)
 
 Fuente: Elaboración propia.
+
+## Relación entre el Diagrama de Secuencia y el Diagrama de Despliegue
+
+Para garantizar la integridad del sistema SMIA, el flujo de mensajes definido en el **Diagrama de Secuencia** tiene una correspondencia directa con la infraestructura detallada en el **Diagrama de Despliegue**:
+
+1.  **Interacción de Componentes**: Cada "Línea de Vida" (Lifeline) en el diagrama de secuencia representa una instancia de un microservicio que reside dentro de un contenedor Docker específico en el diagrama de despliegue.
+2.  **Protocolos de Comunicación**: Las flechas de mensajes en el modelo de secuencia representan las peticiones **REST/JSON** que viajan físicamente a través de la red interna del cluster, gestionadas por el nodo del **Central API Gateway**.
+3.  **Persistencia**: Cuando el diagrama de secuencia muestra una llamada de "Guardar Datos", esta se traduce físicamente en una conexión SQL desde el contenedor del microservicio hacia el nodo de la **Base de Datos PostgreSQL** definida en el esquema de despliegue.
+4.  **Seguridad**: El paso de validación en la secuencia ocurre dentro del volumen de seguridad del API Gateway, asegurando que ningún mensaje llegue a los servicios ambientales sin haber sido filtrado por las reglas de seguridad integradas.
+
+![Diagrama de Secuencia](./Diagramas/DiagramadeSecuencia.jpg)
 
 # 7. RESUMEN FINAL
 
